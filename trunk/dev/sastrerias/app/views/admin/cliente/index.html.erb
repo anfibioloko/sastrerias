@@ -1,0 +1,5 @@
+
+<%for cliente in @clientes do %>
+
+	<p><%=link_to cliente.nombre, :action=>:edit,:id=>cliente.id%></p>
+<%end%>

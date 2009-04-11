@@ -1,0 +1,7 @@
+<p>
+Nombre:<%=f.text_field :nombre%>
+</p>
+<div id="telefonos">
+	<%=render :partial=>'telefono',:collection=>@cliente.telefonos%>
+</div>
+<%= add_telefono "Agregar telefono"%>

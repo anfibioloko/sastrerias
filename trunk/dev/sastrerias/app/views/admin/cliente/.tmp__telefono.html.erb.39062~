@@ -1,0 +1,14 @@
+<div class="telefono">
+<%fields_for "cliente[tel_attributes][]",telefono do |form|%>
+		      <p>Telefono:<%= form.text_field :numero,:index=>nil%>
+			  
+			  <%if telefono.new_record?%>
+			  		<%=link_to_function "remover" ,"this.up('.telefono').remove()"%>
+			  <%else%>
+					<%=link_to_function "remover" ,"mark_for_destroy(this)"%>
+			  		<%= form.hidden_field :id,:index=>nil%>
+    	  		    <%= form.hidden_field :should_destroy, :index=>nil, :class=>"should_destroy"%>
+			  <%end%>
+			  </p>
+<%end%>
+</div>

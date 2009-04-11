@@ -1,0 +1,9 @@
+<%form_for :cliente ,:url =>{:action=>:create} do |f|%>
+	
+	<!--<div id="telefono">
+	<%= render :partial=> 'telefono', :collection=>@cliente.telefono%>
+	</div>
+	<%= add_telefono "Agregar Telefono"%>-->
+	<%=render :partial=>'fields',:locals=>{:f=>f}%>
+	<p><%= submit_tag 'Crear'%></p>
+<%end%>

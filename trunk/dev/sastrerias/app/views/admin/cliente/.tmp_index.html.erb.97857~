@@ -1,0 +1,5 @@
+<h1>Admin::Cliente#index</h1>
+<p>Find me in app/views/admin/cliente/index.html.erb</p>
+<%for cliente in @clientes do %>
+	<%=h cliente.nombre%> <br>
+<%end%>

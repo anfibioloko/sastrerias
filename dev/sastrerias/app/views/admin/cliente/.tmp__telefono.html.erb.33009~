@@ -1,0 +1,6 @@
+<div class="telefono">
+<%fields_for "cliente[tel_attributes][]",telefono do |tel_form|%>
+		      <p>Telefono:<%= tel_form.text_field :numero%>
+			  <%=link_to_function "remover" ,"this.up('.telefono').remove()"%></p>
+<%end%>
+</div>

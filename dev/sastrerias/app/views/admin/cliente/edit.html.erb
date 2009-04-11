@@ -1,0 +1,5 @@
+<%form_for :cliente, :url=>cliente_path(@cliente), :html=>{:method=>'put'} do |f|%>
+	<%=render :partial=>'fields',:locals=>{:f=>f}%>
+	<p><%=submit_tag "Actualizar"%></p>
+<%end%>
+
